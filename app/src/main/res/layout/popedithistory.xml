@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+
+
+    android:background="@android:color/transparent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hisedtVoca"
+        android:background="@drawable/inputbox"
+        android:text="A"
+        android:layout_alignParentStart="true"
+        android:textColor="#ff1212"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView2"
+        android:layout_alignEnd="@+id/textView3"
+        android:gravity="fill_vertical"
+        android:inputType="text" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hisedtMean"
+        android:background="@drawable/inputbox"
+        android:text="Text"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="top"
+        android:height="150dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Vocabulary"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#0100ff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Mean"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/hisedtVoca"
+        android:layout_centerHorizontal="true"
+        android:textColor="#0100ff"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lưu Lại"
+        android:id="@+id/hisbtnSave"
+        android:layout_below="@+id/hisedtMean"
+        android:layout_toStartOf="@+id/textView2"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hisbtnCancel"
+        android:text="Hủy bỏ"
+        android:layout_below="@+id/hisedtMean"
+        android:layout_toEndOf="@+id/textView2"
+        android:background="@android:color/transparent" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hisedtDau"
+        android:background="@drawable/inputbox"
+        android:layout_alignParentEnd="true"
+        android:text="Text"
+        android:layout_alignStart="@+id/hisbtnCancel"
+        android:layout_above="@+id/textView3"
+        android:textStyle="bold"
+        android:inputType="text" />
+</RelativeLayout>

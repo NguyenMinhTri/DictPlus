@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="100" >
+
+    <ImageView
+        android:id="@+id/notifiation_image"
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:layout_weight="30"
+        android:contentDescription="Hello"
+        android:src="@drawable/dictplus"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/txtNotiVoca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tu vj"
+        android:layout_toRightOf="@+id/notifiation_image"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/close"
+        android:layout_toStartOf="@+id/close"
+        android:textColor="#ff1100"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtNotiMean"
+        android:text="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/close"
+        android:layout_toRightOf="@+id/notifiation_image"
+        android:layout_toEndOf="@+id/notifiation_image"
+        android:layout_alignBottom="@+id/close"
+        android:layout_below="@+id/txtNotiVoca"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        android:id="@+id/close"
+        android:layout_gravity="center_vertical"
+        android:background="#00ffffff"
+        android:textColor="#ff0000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

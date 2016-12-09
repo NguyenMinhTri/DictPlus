@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="edu.uit.demonewfeed.MainActivity">
+
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Mời Bạn Đặt Câu Hỏi"
+        android:id="@+id/textView"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/_frEdCauHoi"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Nhập câu hỏi ở đây" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/_frImage"
+
+        android:layout_below="@+id/_frEdCauHoi"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn Ảnh Từ Thẻ Bộ Nhớ"
+        android:id="@+id/_frbtnTimThe"
+        android:layout_below="@+id/_frImage"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tìm Ảnh Trên Internet"
+        android:id="@+id/_frbtnTimIn"
+        android:layout_below="@+id/_frbtnTimThe"
+        android:layout_alignRight="@+id/_frbtnTimThe"
+        android:layout_alignEnd="@+id/_frbtnTimThe"
+        android:layout_alignLeft="@+id/_frbtnTimThe"
+        android:layout_alignStart="@+id/_frbtnTimThe"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng Câu Hỏi"
+        android:id="@+id/_frbtnNew"
+        android:layout_below="@+id/_frbtnTimIn"
+        android:layout_alignRight="@+id/_frbtnTimIn"
+        android:layout_alignEnd="@+id/_frbtnTimIn"
+        android:layout_alignLeft="@+id/_frbtnTimIn"
+        android:layout_alignStart="@+id/_frbtnTimIn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Các Câu Hỏi Cộng Đồng"
+        android:id="@+id/btnGoQues"
+        android:layout_below="@+id/_frbtnNew"
+        android:layout_alignLeft="@+id/_frbtnNew"
+        android:layout_alignStart="@+id/_frbtnNew"
+        android:layout_alignRight="@+id/_frbtnNew"
+        android:layout_alignEnd="@+id/_frbtnNew"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
